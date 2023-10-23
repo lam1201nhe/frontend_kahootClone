@@ -26,6 +26,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              Hello World
               By{' '}
               <Image
                 src="/vercel.svg"
