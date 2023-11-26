@@ -18,7 +18,7 @@ namespace BusinessObjects.Models
         public string? Image { get; set; }
         public string? Description { get; set; }
         public string Phone { get; set; } = null!;
-        public bool? Gender { get; set; }
+        public int? Gender { get; set; }
 
         public virtual Account Account { get; set; } = null!;
         public virtual ICollection<Game> Games { get; set; }

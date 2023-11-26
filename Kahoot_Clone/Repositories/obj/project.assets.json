@@ -923,6 +923,16 @@
         "runtime": {
           "bin/placeholder/DataAccess.dll": {}
         }
+      },
+      "DataTransfer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DataTransfer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataTransfer.dll": {}
+        }
       }
     }
   },
@@ -2307,12 +2317,18 @@
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
       "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "DataTransfer/1.0.0": {
+      "type": "project",
+      "path": "../DataTransfer/DataTransfer.csproj",
+      "msbuildProject": "../DataTransfer/DataTransfer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BusinessObjects >= 1.0.0",
-      "DataAccess >= 1.0.0"
+      "DataAccess >= 1.0.0",
+      "DataTransfer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2321,11 +2337,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\Repositories\\Repositories.csproj",
+      "projectPath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\Repositories\\Repositories.csproj",
       "packagesPath": "C:\\Users\\nnnn\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\Repositories\\obj\\",
+      "outputPath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nnnn\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2342,11 +2358,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj"
+            "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj"
             },
-            "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\DataAccess\\DataAccess.csproj"
+            "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\DataAccess\\DataAccess.csproj"
+            },
+            "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\DataTransfer\\DataTransfer.csproj": {
+              "projectPath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\DataTransfer\\DataTransfer.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KXEAvfQ40VpTKyjOduWnEyDCdvH3f0FQZYRpzwzXkeOTtTwR3RZmCNbzI9FVZ5sQAGvsxjIWpICdDVkEUFbu4A==",
+  "dgSpecHash": "knQZiqzWDCAyVLI5m9XbgY6g47jEeMeqlYyslxLDk4IDPN6zWCDUnsCLFJyYqbpSA3mavmbF09JpDqUnN4lyvw==",
   "success": true,
-  "projectFilePath": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj",
+  "projectFilePath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nnnn\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nnnn\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

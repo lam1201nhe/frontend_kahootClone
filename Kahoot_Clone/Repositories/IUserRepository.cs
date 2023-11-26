@@ -6,6 +6,9 @@ namespace Repositories
     {
         List<User> GetUsers();
         void SaveUser(User user);
-
+        void UpdateUser(User user);
+        User CheckEmailExisted(string email);
+        User CheckPhoneExisted(string phone);
+        User GetUserByUserID(int userId);
     }
 }

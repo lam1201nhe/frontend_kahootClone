@@ -1,0 +1,72 @@
+﻿@model DataTransfer.GameDTO
+
+<style>
+    .container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper {
+        border: 1px solid gray;
+        padding: 20px 32px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 5px 5px 1px black;
+    }
+
+    .form-label {
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+<div class="container">
+    <div class="wrapper">
+        <h1 style="color: red">Create Game</h1>
+        <form method="POST">
+            <div class="mb-3">
+                <label for="Name" class="form-label">Game Name</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="Name"
+                       placeholder="Enter game name" />
+            </div>
+            <div class="mb-3">
+                <label for="PinCode" class="form-label">Pin Code</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="PinCode"
+                       value="@ViewData["Pin"]"
+                       readonly />
+            </div>
+
+            @* <div class="mb-3">
+                <label for="gameDescription" class="form-label">Game Description</label>
+                <textarea class="form-control"
+                          id="gameDescription"
+                          name="gameDescription"
+                          rows="3"
+                          placeholder="Enter game description"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="gameCategory" class="form-label">Game Category</label>
+                <select class="form-select" aria-label="Default select example" id="gameCategory">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div> *@
+            <div class="mb-3">
+                <label asp-for="Publish" class="form-label">Game Publisher</label>
+                <br />
+                <input asp-for="Publish" value="1" type="radio" checked/>Publish
+                <input asp-for="Publish" value="0" type="radio" />Private
+            </div>
+            <div class="buttons">
+                <button class="btn btn-outline-danger" asp-action="Create"> Cancel</button>
+                <button class="btn btn-outline-success">Create</button>
+            </div>
+        </form>
+    </div>
+</div>
+

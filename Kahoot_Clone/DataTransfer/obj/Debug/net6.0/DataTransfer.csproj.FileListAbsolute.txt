@@ -1,0 +1,11 @@
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\bin\Debug\net6.0\DataTransfer.deps.json
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\bin\Debug\net6.0\DataTransfer.dll
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\bin\Debug\net6.0\DataTransfer.pdb
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\obj\Debug\net6.0\DataTransfer.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\obj\Debug\net6.0\DataTransfer.AssemblyInfoInputs.cache
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\obj\Debug\net6.0\DataTransfer.AssemblyInfo.cs
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\obj\Debug\net6.0\DataTransfer.csproj.CoreCompileInputs.cache
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\obj\Debug\net6.0\DataTransfer.dll
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\obj\Debug\net6.0\refint\DataTransfer.dll
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\obj\Debug\net6.0\DataTransfer.pdb
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\DataTransfer\obj\Debug\net6.0\ref\DataTransfer.dll

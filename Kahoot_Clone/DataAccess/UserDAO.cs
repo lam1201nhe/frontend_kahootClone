@@ -27,6 +27,22 @@ namespace DataAccess
             }
             return listUsers;
         }
+        public static User GetUserByUserID(int userId)
+        {
+            User user = new User();
+            try
+            {
+                using (var context = new CloneKahootContext())
+                {
+                    user = context.Users.Where(u => u.UserId == userId).FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return user;
+        }
 
         public static void SaveUser(User user)
         {
@@ -60,38 +76,38 @@ namespace DataAccess
             }
         }
 
-        public static bool CheckEmailExisted(string email)
+        public static User CheckEmailExisted(string email)
         {
-            bool userExists = false;
+            User user = new User();
             try
             {
                 using (var context = new CloneKahootContext())
                 {
-                    userExists = context.Users.Any(u => u.Email == email);
+                    user = context.Users.SingleOrDefault(u => u.Email == email);
                 }
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-            return userExists;
+            return user;
         }
 
-        public static bool CheckPhoneExisted(string phone)
+        public static User CheckPhoneExisted(string phone)
         {
-            bool userExists = false;
+            User user = new User();
             try
             {
                 using (var context = new CloneKahootContext())
                 {
-                    userExists = context.Users.Any(u => u.Phone == phone);
+                    user = context.Users.SingleOrDefault(u => u.Phone == phone);
                 }
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-            return userExists;
+            return user;
         }
 
     }

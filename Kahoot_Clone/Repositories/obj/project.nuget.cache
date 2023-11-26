@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "laylcq+Df5FlQBt+JPofmDqzWH43VANfNChON4N799F8oYO8NDf7oz6Ev7eYmsMecGi4Pan2Pul6uNLUP49B/A==",
+  "dgSpecHash": "CmAnLuK75HPVI4YG/7rvxB0wxDz7MvxXW0z11G5m4dST1vyOpY+4PSMEMU/sL97jMMHUSEsnn1rRt6EryXbXLg==",
   "success": true,
-  "projectFilePath": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\Repositories\\Repositories.csproj",
+  "projectFilePath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nnnn\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\nnnn\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

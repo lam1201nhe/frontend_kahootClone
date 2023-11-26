@@ -15,7 +15,7 @@ namespace BusinessObjects.Models
         public string Name { get; set; } = null!;
         public string PinCode { get; set; }
         public int UserId { get; set; }
-        public bool? Publish { get; set; }
+        public int? Publish { get; set; }
 
         public virtual User User { get; set; } = null!;
         public virtual ICollection<GameSession> GameSessions { get; set; }

@@ -1,0 +1,48 @@
+﻿@model DataTransfer.LoginDTO
+
+@if (ViewData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">@ViewData["ErrorMessage"]</div>
+}
+@if (ViewData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">@ViewData["SuccessMessage"]</div>
+}
+
+
+<style>
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper {
+        width: 50%;
+        padding: 20px;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="container-fluid mt-5">
+    <div class="wrapper">
+        <form method="post">
+            <h1 class="text-center">Login</h1>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">#</span>
+                <input asp-for="Username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap mt-3">
+                <span class="input-group-text" id="addon-wrapping">#</span>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+            </div>
+            <div class="buttons mt-3 mb-3">
+                <button class="btn btn-outline-success">Login</button>
+            </div>
+            <div>
+                Don't have any account yet? <a asp-action="Register">Register</a>
+            </div>
+        </form>
+    </div>
+</div>

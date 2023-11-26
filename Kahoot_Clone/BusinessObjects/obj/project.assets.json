@@ -2349,11 +2349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj",
+      "projectUniqueName": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj",
       "projectName": "BusinessObjects",
-      "projectPath": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj",
+      "projectPath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\BusinessObjects\\BusinessObjects.csproj",
       "packagesPath": "C:\\Users\\nnnn\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT\\ChuyenNganhKy8\\PRN231\\PRN231_Mac\\Code\\Kahoot_Clone\\BusinessObjects\\obj\\",
+      "outputPath": "E:\\FPT\\Mindx\\KickStart\\frontend_kahootClone\\Kahoot_Clone\\BusinessObjects\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nnnn\\AppData\\Roaming\\NuGet\\NuGet.Config",

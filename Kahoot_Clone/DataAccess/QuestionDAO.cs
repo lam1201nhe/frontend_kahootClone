@@ -21,6 +21,45 @@ namespace DataAccess
             return listQuestions;
         }
 
+        public static List<Question> GetQuestionsByGameID(int gameId)
+        {
+            var listQuestions = new List<Question>();
+            try
+            {
+                using (var context = new CloneKahootContext())
+                {
+                    listQuestions = context.Questions.Where(q => q.GameId == gameId).ToList();
+                    listQuestions.ForEach(question =>
+                    {
+                        question.Game = context.Games.Find(question.GameId);
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return listQuestions;
+        }
+
+
+        public static Question GetQuestion(int questionId)
+        {
+            Question question = new Question();
+            try
+            {
+                using (var context = new CloneKahootContext())
+                {
+                    question = context.Questions.Where(q => q.QuestionId == questionId).FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return question;
+        }
+
         public static void SaveQuestion(Question question)
         {
             try
