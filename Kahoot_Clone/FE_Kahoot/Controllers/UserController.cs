@@ -20,7 +20,7 @@ namespace FE_Kahoot.Controllers
         public ActionResult<User> GetUserByUserID(int id) => repository.GetUserByUserID(id);
 
         [HttpPost]
-        public IActionResult SaveUser(RegisterDTO user)
+        public IActionResult SaveUser(ProfileDTO user)
         {
             var newUser = new User
             {
@@ -38,7 +38,7 @@ namespace FE_Kahoot.Controllers
         }
 
         [HttpPut("id")]
-        public IActionResult UpdateUser(int userId, RegisterDTO user)
+        public IActionResult UpdateUser(int userId, ProfileDTO user)
         {
             var newUser = new User
             {
@@ -63,7 +63,7 @@ namespace FE_Kahoot.Controllers
             {
                 return Ok(user);
             }
-            return NotFound();
+            return Ok();
         }
 
         [HttpGet("PhoneExisted")]
@@ -74,7 +74,7 @@ namespace FE_Kahoot.Controllers
             {
                 return Ok(user);
             }
-            return NotFound();
+            return Ok();
         }
     }
 }

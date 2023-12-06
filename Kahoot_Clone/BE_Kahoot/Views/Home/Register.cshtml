@@ -1,5 +1,13 @@
-﻿
+﻿@model DataTransfer.RegisterDTO
 
+@if (ViewData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">@ViewData["ErrorMessage"]</div>
+}
+@if (ViewData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">@ViewData["SuccessMessage"]</div>
+}
 
 <style>
     .container-fluid {
@@ -17,69 +25,45 @@
     }
 </style>
 <div class="container-fluid">
-      <div class="wrapper">
-        <form action="">
-          <h1 class="text-center">Register account</h1>
-          <div class="input-group">
-            @Html.Raw("<span class=\"input-group-text\" id=\"basic-addon1\">@</span>")
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Username"
-            />
-          </div> 
-          <div class="form-text mb-3">
-            Example help text goes outside the input group.
-          </div>
-         
-
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Email"
-            />
-                @Html.Raw("<span class=\"input-group-text\">@gmail.com</span>")
-          </div>
-
-          <div class="mb-3">
-            <label for="password" class="form-label">Your password</label>
+    <div class="wrapper">
+        <form method="post">
+            <h1 class="text-center">Register account</h1>
             <div class="input-group">
-              <span class="input-group-text"
-                >Password</span>
-              <input
-                type="text"
-                class="form-control"
-                id="password"
-              />
+                @Html.Raw("<span class=\"input-group-text\" id=\"basic-addon1\">@</span>")
+                <input type="text"
+                       class="form-control"
+                       placeholder="Username"
+                       asp-for="Username"/>
             </div>
-            <div class="form-text mb-2">
-            Password must have at least 8 characters
+            <div class="form-text mb-3">
+                Example help text goes outside the input group.
             </div>
-          </div>
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Full Name"
-              id="fullname"
-            />
-            <span class="input-group-text"><i class="fa fa-phone"></i></span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Phone"
-            />
-          </div>
 
-          <div class="input-group">
-            <label class="input-group-text" for="gender">Gender</label>
-            <select class="form-select">
-              <option selected>Choose...</option>
-              <option value="1">Male</option>
-              <option value="0">Female</option>
-            </select>
-          </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Your password</label>
+                <div class="input-group">
+                    <span class="input-group-text">Password</span>
+                    <input type="password"
+                           class="form-control"
+                           asp-for="Password" />
+                </div>
+                <div class="form-text mb-2">
+                    Password must have at least 8 characters
+                </div>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Password</span>
+                <input type="password"
+                       class="form-control"
+                       asp-for="ConfirmPassword"
+                       />
+            </div>
+
+            <div class="buttons mt-3">
+                <button class="btn btn-outline-dark">Register</button>
+            </div>
+            
         </form>
-      </div>
     </div>
+</div>

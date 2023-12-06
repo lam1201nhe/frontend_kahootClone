@@ -78,27 +78,40 @@ namespace BE_Kahoot.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Register(RegisterDTO registerDTO)
-        //{
-        //    User user = await ApiHandler.DeserializeApiResponse<User>(UserApiUrl + "/Email/" + customerRequest.Email, HttpMethod.Get);
-        //    if (customerRequest.Email.Equals("admin@flowerbouquetsystem.com") || (customer != null && customer.CustomerID != 0))
-        //    {
-        //        ViewData["ErrorMessage"] = "Email already exists.";
-        //        return View("Register");
-        //    }
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterDTO registerDTO)
+        {
+            Account account = await ApiHandler.DeserializeApiResponse<Account>(AccountApiUrl + "/username=" + registerDTO.Username, HttpMethod.Get);
+            if (account != null && account.AccountId != 0)
+            {
+                ViewData["ErrorMessage"] = "Username already exists.";
+                return View("Register");
+            }
 
-        //    await ApiHandler.DeserializeApiResponse(CustomerApiUrl, HttpMethod.Post, customerRequest);
+            if (registerDTO.Password != null && registerDTO.Password == registerDTO.ConfirmPassword)
+            {
+                await ApiHandler.DeserializeApiResponse(AccountApiUrl, HttpMethod.Post, registerDTO);
 
-        //    ViewData["SuccessMessage"] = "Register new account successfully.";
-        //    return View("Index");
-        //}
+                Account newAccount = await ApiHandler.DeserializeApiResponse<Account>(AccountApiUrl + "/username=" + registerDTO.Username, HttpMethod.Get);
+                
+                HttpContext.Session.SetInt32("USERID", newAccount.AccountId);
+                HttpContext.Session.SetString("USERNAME", newAccount.Username);
+                
+                ViewData["SuccessMessage"] = "Register new account successfully.";
+                return RedirectToAction("CreateProfile", "User");
+            }else
+            {
+                ViewData["ErrorMessage"] = "Password is not matching.";
+                return View("Register");
+            }
+            
+        }
 
-        //[HttpGet]
-        //public IActionResult Logout()
-        //{
-        //    HttpContext.Session.Clear();
-        //    return RedirectToAction("Index");
-        //}
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
+        }
     }
 }

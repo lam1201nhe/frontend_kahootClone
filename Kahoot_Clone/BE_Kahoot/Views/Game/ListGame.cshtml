@@ -1,0 +1,36 @@
+﻿@model List<string>
+@{
+    string code = "";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        @if (Model.Count() <= 5)
+        {
+            <div class="col-md-12 cards">
+                @foreach (var item in Model)
+                {
+                    <div class="card" id="@item" asp-action="Transfer">
+                        @item
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+<script>
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+
+        card.addEventListener('click', () => {
+
+            const maPin = card.id;
+    @code = maPin
+    @{
+        Context.Session.SetString("CODE", code);
+    }
+                });
+    });
+</script>
+

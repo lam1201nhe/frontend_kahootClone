@@ -4,27 +4,40 @@
     BusinessObjects.Models.Question question = (BusinessObjects.Models.Question)ViewData["Question"];
 }
 <style>
-    ul {
-        max-height: 100vh;
-        overflow-y: scroll;
+    ul.web-body__ul {
+        max-height: 80vh;
+        overflow-y: hidden;
         overflow-x: hidden;
     }
 
-    li {
+        ul.web-body__ul:hover {
+            overflow-y: scroll;
+        }
+
+    li.web-body_quiz {
         list-style-type: none;
-        max-width: 200px;
+        max-width: 140px;
     }
 
     .nav-link-quiz {
-        box-shadow: 0px 0px 5px 0px gray;
-        background-color: #706233;
-        color: #fff;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        text-decoration: none;
+        color: black;
         padding: 10px;
         width: fit-content;
         max-width: inherit;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link-quiz:hover {
+            color: #EE7214;
+            border: 1px solid #EE7214;
     }
 
     .grid-container {
@@ -42,6 +55,13 @@
         font-size: 20px;
         text-align: center;
         box-shadow: 0px 0px 5px 0px black;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+        /* outline-color: #EE7214; */
+    }
+
+    .grid-item:hover{
+        border: 1px solid #EE7214;
     }
 
     .grid-blue {
@@ -69,32 +89,32 @@
     <div class="row">
         <div class="web-body__nav col-md-2">
             <form>
-            <ul class="web-body__ul p-0">
-                <li> <button class="btn btn-outline-dark mb-3" asp-action="Create" asp-controller="Quiz">Create Quiz</button>  </li>
+                <ul class="web-body__ul p-0">
+                    <li> <button class="btn btn-outline-dark mb-3" asp-action="Create" asp-controller="Quiz">Create Quiz</button>  </li>
                     @{
                         int stt = 1;
                     }
-                @foreach (var item in Model)
-                {
-                    <li>
-                        <a href="./List?questionId=@item.QuestionId" class="nav-link nav-link-quiz mb-3">
-                            Quiz @(stt++): <b>
-                                @item.QuestionContent
+                    @foreach (var item in Model)
+                    {
+                        <li class="web-body_quiz">
+                            <a href="./List?questionId=@item.QuestionId" class="nav-link nav-link-quiz mb-3">
+                                Quiz @(stt++): <b>
+                                    @item.QuestionContent
+                                </b>
+                            </a>
+                        </li>
+                    }
+                    <li class="web-body_quiz">
+                        <a href="" class="nav-link nav-link-quiz mb-3">
+                            Quiz 1: <b>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+                                sequi ab possimus magnam, minima ipsam! Numquam, dignissimos commodi! Iusto aliquam molestiae praesentium reprehenderit e
+                                os quisquam quaerat atque quae amet facere?
                             </b>
                         </a>
                     </li>
-                }
-                <li>
-                    <a href="" class="nav-link nav-link-quiz mb-3">
-                        Quiz 1: <b>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-                            sequi ab possimus magnam, minima ipsam! Numquam, dignissimos commodi! Iusto aliquam molestiae praesentium reprehenderit e
-                            os quisquam quaerat atque quae amet facere?
-                        </b>
-                    </a>
-                </li>
-            </ul>
-        </form>
+                </ul>
+            </form>
         </div>
         <div class="web-body__content col-md-10">
             <h1>@question?.QuestionContent</h1>

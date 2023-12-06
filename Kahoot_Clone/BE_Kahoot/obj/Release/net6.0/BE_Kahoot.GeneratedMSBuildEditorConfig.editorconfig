@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BE_Kahoot
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/Game/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/Game/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/Game/ListGame.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxMaXN0R2FtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +46,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/User/CreateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGVQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/User/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/FPT/Mindx/KickStart/frontend_kahootClone/Kahoot_Clone/BE_Kahoot/Views/_ViewImports.cshtml]

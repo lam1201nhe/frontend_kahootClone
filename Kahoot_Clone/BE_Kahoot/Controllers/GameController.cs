@@ -65,13 +65,27 @@ namespace BE_Kahoot.Controllers
         public async Task<IActionResult> List(int questionId)
         {
             string PinCode = HttpContext.Session.GetString("CODE");
+
             Game game = await ApiHandler.DeserializeApiResponse<Game>(GameApiUrl + "/pincode?pincode=" + PinCode, HttpMethod.Get);
             List<Question> listQuestions = await ApiHandler.DeserializeApiResponse<List<Question>>(QuestionApiUrl + "/GameId=" + game.GameId, HttpMethod.Get);
             Question question = await ApiHandler.DeserializeApiResponse<Question>(QuestionApiUrl + "/id?id=" + questionId, HttpMethod.Get);
+
             ViewData["Question"] = question;
             ViewData["PinCode"] = PinCode;
+
             return View(listQuestions);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> ListGame()
+        {
+            List<string> listCode = await ApiHandler.DeserializeApiResponse<List<string>>(GameApiUrl + "/Codes", HttpMethod.Get);
+            return View(listCode);
+        }
+
+        public IActionResult Transfer()
+        {
+            return RedirectToAction("List");
+        }
     }
 }

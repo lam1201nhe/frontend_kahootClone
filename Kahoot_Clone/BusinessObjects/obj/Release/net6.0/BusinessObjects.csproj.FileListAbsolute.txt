@@ -1,0 +1,14 @@
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\bin\Release\net6.0\BusinessObjects.deps.json
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\bin\Release\net6.0\BusinessObjects.runtimeconfig.json
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\bin\Release\net6.0\BusinessObjects.dll
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\bin\Release\net6.0\BusinessObjects.pdb
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\BusinessObjects.csproj.AssemblyReference.cache
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\BusinessObjects.AssemblyInfoInputs.cache
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\BusinessObjects.AssemblyInfo.cs
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\BusinessObjects.csproj.CoreCompileInputs.cache
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\BusinessObjects.dll
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\refint\BusinessObjects.dll
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\BusinessObjects.pdb
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\BusinessObjects.genruntimeconfig.cache
+E:\FPT\Mindx\KickStart\frontend_kahootClone\Kahoot_Clone\BusinessObjects\obj\Release\net6.0\ref\BusinessObjects.dll
